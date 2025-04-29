@@ -37,6 +37,7 @@ import {
   SidebarProvider,
   SidebarTrigger,
 } from "@/components/ui/sidebar"
+import { Profile } from "@/components/profile"
 
 export default function DashboardLayout({ children }: { children: ReactNode }) {
   return (
@@ -119,6 +120,9 @@ export default function DashboardLayout({ children }: { children: ReactNode }) {
               </SidebarMenuItem>
             </SidebarMenu>
           </SidebarContent>
+          <div className="mt-auto p-4">
+            <Profile />
+          </div>
           <SidebarFooter className="border-t p-4">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2">
